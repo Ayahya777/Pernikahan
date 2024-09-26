@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <style>
+        body {
+            font-family: Palatino, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d8bfd8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffc0cb;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 18px;
+            color: #666;
+        }
+        .content {
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer p {
+            font-size: 16px;
+            color: #666;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .footer a:hover {
+            color: #0056b3;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .flower-left, .flower-right {
+            position: absolute;
+            top: -30px;
+            width: 100px;
+        }
+        
+        .flower-left {
+            left: -30px;
+        }
+
+        .flower-right {
+            right: -30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <img src="Flower.png" class="flower-left" />
+    
+    <img src="Flower.png" class="flower-right" />
+
+    <div class="header">
+        <h1>Undangan Pernikahan</h1>
+        <p><strong>Reza</strong> & <strong>Olivia</strong></p>
+    </div>
+
+    <div class="content">
+        <img src="Wed.AVIF" alt="Gambar Pernikahan" />
+        <p>Diadakan pada tanggal <strong>28 September 2024</strong> pukul <strong>13:00 WIB</strong> di <strong>Hotel Ciputra Semarang</strong>.</p>
+        <p>Ungkapan terima kasih yang tulus dari kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restu kepada kedua mempelai.</p>
+        
+        <button class="btn btn-primary" onclick="alert('Detail Acara:\nTanggal & Hari : Sabtu, 28 September 2024\nLokasi : Hotel Ciputra Semarang\nJam : 13:00 WIB');">Detail Acara</button>
+
+        
+        <br><br>
+        <a href="https://www.google.com/maps?q=Hotel+Ciputra+Semarang" target="_blank">
+          <button class="btn">Lihat di Google Maps</button>
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>Terima kasih atas perhatian dan kehadiran Anda.</p>
+        <p>Wassalamu'alaikum warahmatullahi wabarakatuh.</p>
+        <a href="#">Klik untuk kembali ke halaman utama</a>
+    </div>
+
+</div>
+
+<script>
+    document.querySelector('.btn').addEventListener('click', function() {
+        alert('Detail Acara:\nTanggal & Hari : Sabtu, 28 September 2024\nLokasi : Hotel Ciputra Semarang\nJam : 13:00 WIB');
+    });
+</script>
+
+</body>
+</html>
